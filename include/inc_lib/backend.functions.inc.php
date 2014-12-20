@@ -58,50 +58,18 @@ function forward_to($to, $link, $time=2500) { //Javascript forwarding
 	if($to) echo "<script type=\"text/javascript\">\n setTimeout(\"document.location.href='".$link."'\", ".(intval($time))."); \n</script>\n";
 }
 
-function subnavtext($text, $link, $is, $should, $getback=1, $js='') {
-	//generate subnavigation based on text
-	$id = "subnavid".generic_string(5);
-	$sn = '';
-	if($is == $should) {
-		$sn .= '<tr><td><img src="img/subnav/subnav_B.gif" width="15" height="13" border="0" alt="" /></td>';
-		$sn .= '<td class="subnavactive"><a href="'.$link.'">'.$text.'</a></td></tr>';
-	} else {
-		$sn .= "<tr><td><img name=\"".$id."\" src=\"img/subnav/subnav_A.gif\" width=\"15\" height=\"13\" border=\"0\" alt=\"\" /></td>";
-		$sn .= "<td class=\"subnavinactive\"><a href=\"".$link."\" ".$js;
-		$sn .= "onMouseOver=\"".$id.".src='img/subnav/subnav_B.gif'\" onMouseOut=\"".$id;
-		$sn .= ".src='img/subnav/subnav_A.gif'\">".$text."</a></td></tr>";
+function phpwcms_subnav($text='', $link='', $active=false, $attribute='') {
+	$item = '		<li class="item-sub';
+	if($active) {
+		$item .= ' active';
 	}
-	$sn .= "\n";
-	if(!$getback) {
-		return $sn;
-	} else {
-		echo $sn;
+	$item .= '"><a href="' . $link . '"';
+	if($attribute) {
+		$item .= ' '.trim($attribute);
 	}
-}
-
-function subnavtextext($text, $link, $target='_blank', $getback=1) {
-	//generate subnavigation based on text and links to new page
-	$id  = 'subnavid'.generic_string(5);
-	$sn  = '<tr><td><img src="img/subnav/subnav_A.gif" width="15" height="13" border="0" name="'.$id.'" alt="" /></td>';
-	$sn .= '<td class="subnavinactive"><a href="'.$link.'" target="'.$target.'" ';
-	$sn .= "onMouseOver=\"".$id.".src='img/subnav/subnav_B.gif'\" onMouseOut=\"".$id.".src='img/subnav/subnav_A.gif'\"";
-	$sn .= '>'.$text.'</a></td></tr>';
-	$sn .= "\n";
-	if(!$getback) { return $sn; } else { echo $sn; }
-}
-
-function subnavback($text, $link, $h_before=0, $h_after=0) {
-	$id = "subbackid".generic_string(5);
-	$sn  = "<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n";
-	$sn .= (intval($h_before)) ? "<tr><td colspan=\"2\"><img src=\"img/leer.gif\" width=\"1\" height=\"".intval($h_before)."\" alt=\"\" /></td></tr>\n" : "";
-	$sn .= "<tr>";
-	$sn .= "<td><img name=\"".$id."\" src=\"img/subnav/subnav_back_0.gif\" width=\"9\" height=\"9\" border=\"0\" alt=\"\" /></td>";
-	$sn .= "<td class=\"subnavinactive\">&nbsp;<a href=\"".$link."\" onMouseOver=\"".$id.".src='img/subnav/subnav_back_1.gif'\" ";
-	$sn .= "onMouseOut=\"".$id.".src='img/subnav/subnav_back_0.gif'\"><strong>".$text."</strong></a></td>";
-	$sn .= "</tr>\n";
-	$sn .= (intval($h_after)) ? "<tr><td colspan=\"2\"><img src=\"img/leer.gif\" width=\"1\" height=\"".intval($h_after)."\" alt=\"\" /></td></tr>\n" : "";
-	$sn .= "</table>\n";
-	echo $sn;
+	$item .= '>' . $text . '</a>';
+	$item .= '</li>';
+	return $item;
 }
 
 function check_image_extension($file, $filename='') {

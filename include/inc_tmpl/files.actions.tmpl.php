@@ -305,7 +305,7 @@ if($fx) {
 
 		<tr>
 			<td>
-			<select name="file_action" id="file_action" class="v12" onChange="showAction()">
+			<select name="file_action" id="file_action" class="v12" onchange="showAction()">
 				<option value="0">- <?php echo $BL['file_actions_pdl_empty'] ?> -</option>
 				<option value="1"><?php echo $BL['file_actions_pdl_delete'] ?></option>
 				<option value="2"><?php echo $BL['file_actions_pdl_move'] ?></option>

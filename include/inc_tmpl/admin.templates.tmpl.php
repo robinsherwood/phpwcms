@@ -250,7 +250,7 @@ if($result = mysql_query($sql, $db) or die("error while listing pagelayouts")) {
 			$custom_blocks = explode(', ', trim($custom_blocks['layout_customblocks']));
 
 			if(is_array($custom_blocks) && count($custom_blocks) && $custom_blocks[0] != '') {
-				$jsOnChange = ' onChange="doPageLayoutChange();"';
+				$jsOnChange = ' onchange="doPageLayoutChange();"';
 			} else {
 				$jsOnChange = '';
 			}

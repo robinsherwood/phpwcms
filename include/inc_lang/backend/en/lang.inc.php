@@ -26,15 +26,16 @@ $BL["login_button"]                     = 'Login';
 $BL["login_lang"]                       = 'backend language';
 
 // phpwcms.php
-$BL['be_nav_logout']                    = 'LOGOUT';
-$BL['be_nav_articles']                  = 'ARTICLE';
-$BL['be_nav_files']                     = 'FILE';
-$BL['be_nav_modules']                   = 'MODULES';
-$BL['be_nav_messages']                  = 'COMMUNICATION';
-$BL['be_nav_chat']                      = 'CHAT';
-$BL['be_nav_profile']                   = 'PROFILE';
-$BL['be_nav_admin']                     = 'ADMIN';
-$BL['be_nav_discuss']                   = 'DISCUSS';
+$BL['be_nav_home']                      = 'Dashboard';
+$BL['be_nav_logout']                    = 'Logout';
+$BL['be_nav_articles']                  = 'Content';
+$BL['be_nav_files']                     = 'File';
+$BL['be_nav_modules']                   = 'Modules';
+$BL['be_nav_messages']                  = 'Communication';
+$BL['be_nav_chat']                      = 'Chat';
+$BL['be_nav_profile']                   = 'Profile';
+$BL['be_nav_admin']                     = 'Admin';
+$BL['be_nav_discuss']                   = 'Discuss';
 
 $BL['be_page_title']                    = 'phpwcms backend (administration)';
 
@@ -1387,5 +1388,7 @@ $BL['be_audio_only']					= 'audio only';
 $BL['be_filter']						= 'filter';
 $BL['be_filter_with_tags']				= 'by tag';
 $BL['be_filter_not_selected']			= 'no category selected';
+
+$BL['be_dashboard_overview']			= 'overview';
 
 ?>

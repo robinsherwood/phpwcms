@@ -507,7 +507,7 @@ if($content["id"]) {
 		<?php
 		if($for_select != '') {
 			echo '<td style="padding:2px;"><select name="successInfo" id="successInfo" class="v10 width200" ';
-			echo 'onChange="insertAtCursorPos(document.articlecontent.cform_onsuccess, ';
+			echo 'onchange="insertAtCursorPos(document.articlecontent.cform_onsuccess, ';
 			echo 'document.articlecontent.successInfo.options[document.articlecontent.successInfo.selectedIndex].value);">';
 			echo $for_select;
 			echo '<option value="{REMOTE_IP}">{REMOTE_IP}</option>'.LF;
@@ -1035,7 +1035,7 @@ if(!empty($field_counter) && $field_counter > 1) {
 		<?php
 		if(!$content['form']["template_format"] && $for_select != '') {
 			echo '<td style="padding:2px;"><select name="ph" id="ph" class="v10 width200" ';
-			echo 'onChange="insertAtCursorPos(document.articlecontent.cform_template, ';
+			echo 'onchange="insertAtCursorPos(document.articlecontent.cform_template, ';
 			echo 'document.articlecontent.ph.options[document.articlecontent.ph.selectedIndex].value);">';
 			echo $for_select;
 			echo '<option value="{FORM_URL}">{FORM_URL}</option>'.LF;
@@ -1217,7 +1217,7 @@ if($content['form']["template_format_copy"]) {
 if($for_select_2 != '') {
 	echo '<tr><td colspan="2"><table summary="" cellpadding="0" cellspacing="0" border="0" bgcolor="#E7E8EB"><tr><td style="padding:2px;">';
 	echo '<select name="ph1" id="ph1" class="v10 width200" ';
-	echo 'onChange="insertAtCursorPos(document.articlecontent.cform_customform, ';
+	echo 'onchange="insertAtCursorPos(document.articlecontent.cform_customform, ';
 	echo 'document.articlecontent.ph1.options[document.articlecontent.ph1.selectedIndex].value);">';
 	echo $for_select_2.'</select></td>';
 	echo '<td><img src="img/button/go04.gif" width="15" height="15" title="insert field placeholder" border="0" ';

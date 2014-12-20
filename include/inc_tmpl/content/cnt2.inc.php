@@ -157,7 +157,7 @@ if($img_thumbs) {
 			  <td align="right" class="chatlist"><?php echo $BL['be_cnt_position'] ?>:&nbsp;</td>
 			  <td valign="top"><table border="0" cellpadding="0" cellspacing="0" summary="">
 			    <tr>
-			      <td><select name="cimage_pos" id="cimage_pos" onChange="changeImagePosMenu();">
+			      <td><select name="cimage_pos" id="cimage_pos" onchange="changeImagePosMenu();">
 			    <option value="0" <?php is_selected(0, $content['image_list']['pos']) ?>><?php echo $BL['be_cnt_pos0'] ?></option>
 			    <option value="1" <?php is_selected(1, $content['image_list']['pos']) ?>><?php echo $BL['be_cnt_pos1'] ?></option>
 			    <option value="2" <?php is_selected(2, $content['image_list']['pos']) ?>><?php echo $BL['be_cnt_pos2'] ?></option>

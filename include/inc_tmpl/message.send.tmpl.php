@@ -150,7 +150,7 @@ if($msg_send_ok) {
 ?>
 		</select></td>
 	<td class="v09"><a href="javascript: opt.transferRight();"><img src="img/icons/trash.gif" alt="" width="15" height="15" border="0"></a><input name="msg_send_receiver" type="hidden" id="msg_send_receiver2"><input name="msg_send_aktion" type="hidden" id="msg_send_aktion" value="1"><input name="msg_send_pid" type="hidden" value="<?php echo intval($msg) ?>"></td>
-	<td class="v09"><select name="msg_send_list" size="10" multiple="multiple" id="msg_send_list" class="width250" onChange="opt.transferLeft()">
+	<td class="v09"><select name="msg_send_list" size="10" multiple="multiple" id="msg_send_list" class="width250" onchange="opt.transferLeft()">
 <?php
 	//Create the list of possible recipients
 	$sql = "SELECT usr_id, usr_login, usr_name FROM ".DB_PREPEND."phpwcms_user ".$where1." ORDER BY usr_name ASC;";

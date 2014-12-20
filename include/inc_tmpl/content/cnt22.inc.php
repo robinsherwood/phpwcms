@@ -111,7 +111,7 @@ if(empty($content["rssfeed"]['content_type'])) {
 	<td><input name="crss_cacheoff" type="checkbox" id="crss_cacheoff" value="1"<?php echo  is_checked(1, $content['rssfeed']["cacheoff"]) ?>></td>
 	<td style="font-size:10px;padding-left:3px;"><label for="crss_cacheoff"><?php echo $BL['be_off'] ?></label>&nbsp;</td>
 	<td>&nbsp;</td>
-	<td><select name="crss_timeout" style="margin:2px;" onChange="document.articlecontent.crss_cacheoff.checked=false;">
+	<td><select name="crss_timeout" style="margin:2px;" onchange="document.articlecontent.crss_cacheoff.checked=false;">
 <?php
 echo '<option value="0"'.is_selected($content['rssfeed']["timeout"], '0', 0, 0).'>'.$BL['be_admin_tmpl_default']."</option>\n";
 echo '<option value="60"'.is_selected($content['rssfeed']["timeout"], '60', 0, 0).'>&nbsp;&nbsp;1 '.$BL['be_date_minute']."</option>\n";

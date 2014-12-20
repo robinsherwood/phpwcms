@@ -415,20 +415,6 @@ function switch_on_off($wert) {
 	return intval($wert) ? 0 : 1;
 }
 
-function online_users($dbcon, $spacer="<br />", $wrap="<span class=\"useronline\">|<span>") {
-	$wrap = explode("|", $wrap);
-	$x=0; $xo="";
-	if($o = mysql_query("SELECT logged_user FROM ".DB_PREPEND."phpwcms_userlog WHERE logged_in=1", $dbcon)) {
-		while($uo = mysql_fetch_row($o)) {
-			$xo .= ($x) ? $spacer : "";
-			$xo .= html($uo[0]);
-			$x++;
-		}
-		mysql_free_result($o);
-	}
-	return ($x) ? $wrap[0].$xo.$wrap[1] : "";
-}
-
 function get_filecat_childcount ($fcatid, $dbcon) {
 	$sql = "SELECT COUNT(fkey_id) FROM ".DB_PREPEND."phpwcms_filekey WHERE fkey_deleted=0 AND fkey_cid=".intval($fcatid);
 	if($result = mysql_query($sql, $dbcon)) {

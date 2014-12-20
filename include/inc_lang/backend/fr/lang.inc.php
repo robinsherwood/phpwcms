@@ -27,15 +27,15 @@ $BL["login_button"]                     = 'connection';
 $BL["login_lang"]                       = 'langue de l&#39;interface d&#39;administration';
 
 // phpwcms.php
-$BL['be_nav_logout']                    = 'DECONNEXION';
-$BL['be_nav_articles']                  = 'ARTICLES';
-$BL['be_nav_files']                     = 'FICHIERS';
-$BL['be_nav_modules']                   = 'MODULES';
-$BL['be_nav_messages']                  = 'MESSAGES';
-$BL['be_nav_chat']                      = 'DISCUSSION';
-$BL['be_nav_profile']                   = 'PROFIL';
-$BL['be_nav_admin']                     = 'ADMIN';
-$BL['be_nav_discuss']                   = 'DISCUTER';
+$BL['be_nav_logout']                    = 'Deconnexion';
+$BL['be_nav_articles']                  = 'Articles';
+$BL['be_nav_files']                     = 'Fichiers';
+$BL['be_nav_modules']                   = 'Modules';
+$BL['be_nav_messages']                  = 'Messages';
+$BL['be_nav_chat']                      = 'Discussion';
+$BL['be_nav_profile']                   = 'Profil';
+$BL['be_nav_admin']                     = 'Admin';
+$BL['be_nav_discuss']                   = 'Discuter';
 
 $BL['be_page_title']                    = 'interface d&#39;administration';
 
@@ -721,7 +721,7 @@ $BL['be_newsletter_open']               = 'donn&eacute;es HTML et TEXTE';
 $BL['be_newsletter_open1']              = '(cliquez sur l&#39;image pour l&#39;ouvrir)';
 $BL['be_newsletter_sendnow']            = 'Envoyer la lettre d&#39;infos';
 $BL['be_newsletter_attention']          = '<strong style="color:#CC3300;">Attention!</strong> Envoyer une lettre d&#39;infos &agrave; plusiers destinataires peut s&#39;av&eacute;rer risqu&eacute;. Les adresses des destinataires doivent avoir &eacute;t&eacute; v&eacute;rifi&eacute;es sinon vous pourriez envoyer du spam potentiel. Pensez-y &agrave; deux fois avant d&#39;envoyer des lettre d&#39;infos. Faites un test avant de tout envoyer.';
-$BL['be_newsletter_attention1']         = 'Si vous avez modifi&eacute; des donn&eacute;es dans votre lettre d&#39;infos sauvez-le, sinon vous perdrez les changements.'; 
+$BL['be_newsletter_attention1']         = 'Si vous avez modifi&eacute; des donn&eacute;es dans votre lettre d&#39;infos sauvez-le, sinon vous perdrez les changements.';
 $BL['be_newsletter_testemail']          = 'Email de test';
 $BL['be_newsletter_sendnlbutton']       = 'envoyez la lettre d&#39;infos';
 $BL['be_newsletter_sendprocess']        = 'processus d&#39;envoi';
@@ -964,7 +964,7 @@ $BL['be_file_replace']					 = 'Remplacer les fichiers &eacute;ponymes';
 $BL['be_alias_articleID']				 = 'alias ID';
 $BL['be_alias_useAll']					 = "utiliser les donn&eacute;es de l&#39;ent&ecirc;te de cet article";
 $BL['be_article_morelink']				 = 'lien [en savoir plus&#8230;]';
-$BL['be_admin_tmpl_copy']                = 'copier le gabarit'; 
+$BL['be_admin_tmpl_copy']                = 'copier le gabarit';
 
 $BL['be_ctype_filelist1']                = 'liste de fichiers pro';
 $BL['be_cnt_fpro_usecaption']            = 'utiliser le centre de fichiers &quot;'.$BL['be_ftptakeover_longinfo'].'&quot;';

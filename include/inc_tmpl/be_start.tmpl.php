@@ -143,7 +143,7 @@ $_last10_article = _dbQuery($_asql_1);
 
 <div style="margin:25px 0 10px 0;padding:0;">
 	<form class="formRightInput" action="phpwcms.php" id="setHomeMaxCntParts" name="setHomeMaxCntParts" method="post">
-		<select name="homeCntType" onChange="this.form.submit();" class="width150">
+		<select name="homeCntType" onchange="this.form.submit();" class="width150">
 			<option value="">&#8211;</option>
 	<?php foreach($wcs_content_type as $key => $value): ?>
 			<option value="<?php echo $key ?>"<?php is_selected($_phpwcms_home['homeCntType'], $key) ?>><?php echo $value ?></option>

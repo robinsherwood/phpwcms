@@ -146,9 +146,9 @@ if($map_selected) {
   <td valign="top"><table border="0" cellpadding="0" cellspacing="0" bgcolor="#E7E8EB" summary="">
 			    <tr>
 				  <td class="v10">&nbsp;&nbsp;X:&nbsp; </td>
-				  <td><input name="cmap_location_x" type="text" class="f10" id="cmap_location_x" style="width: 50px;" size="4" maxlength="4" value="<?php echo  empty($content['location']["x"]) ? '' : intval($content['location']["x"]) ?>" onChange="doMapChange();"></td>
+				  <td><input name="cmap_location_x" type="text" class="f10" id="cmap_location_x" style="width: 50px;" size="4" maxlength="4" value="<?php echo  empty($content['location']["x"]) ? '' : intval($content['location']["x"]) ?>" onchange="doMapChange();"></td>
 			      <td class="v10">&nbsp;&nbsp;Y:&nbsp; </td>
-			      <td><input name="cmap_location_y" type="text" class="f10" id="cmap_location_y" style="width: 50px;" size="4" maxlength="4" value="<?php echo  empty($content['location']["y"]) ? '' : intval($content['location']["y"]) ?>" onChange="doMapChange();"></td>
+			      <td><input name="cmap_location_y" type="text" class="f10" id="cmap_location_y" style="width: 50px;" size="4" maxlength="4" value="<?php echo  empty($content['location']["y"]) ? '' : intval($content['location']["y"]) ?>" onchange="doMapChange();"></td>
 			      <td class="v10">&nbsp;px&nbsp;&nbsp;&nbsp;</td>
 				  <td class="v10"><input name="open_map" type="button" value="open map" class="v09"
 				  onclick="flevPopupLink('include/inc_tmpl/content/cnt51.open.php?cid=<?php
@@ -165,16 +165,16 @@ if($map_selected) {
 <tr><td colspan="2"><img src="img/leer.gif" alt="" width="1" height="3"></td></tr>
 <tr>
   <td align="right" class="chatlist"><?php echo $BL['be_cnt_map_title'] ?>:&nbsp;</td>
-  <td><input name="cmap_location_title" type="text" class="f11" style="width: 440px" value="<?php echo  empty($content['location']["title"]) ? '' : html($content['location']["title"]) ?>" size="40" onChange="doMapChange();"></td>
+  <td><input name="cmap_location_title" type="text" class="f11" style="width: 440px" value="<?php echo  empty($content['location']["title"]) ? '' : html($content['location']["title"]) ?>" size="40" onchange="doMapChange();"></td>
 </tr>
 <tr><td colspan="2"><img src="img/leer.gif" alt="" width="1" height="2"></td></tr>
 <tr>
   <td align="right" class="chatlist"><?php echo $BL['be_profile_label_zip'] ?>:&nbsp;</td>
   <td><table border="0" cellpadding="0" cellspacing="0" summary="">
   <tr>
-  <td style="width:55px;"><input name="cmap_location_zip" type="text" class="f11" style="width: 55px" value="<?php echo  empty($content['location']["zip"]) ? '' : html($content['location']["zip"]) ?>" size="8" onChange="doMapChange();"></td>
+  <td style="width:55px;"><input name="cmap_location_zip" type="text" class="f11" style="width: 55px" value="<?php echo  empty($content['location']["zip"]) ? '' : html($content['location']["zip"]) ?>" size="8" onchange="doMapChange();"></td>
   <td class="chatlist" align="right">&nbsp;&nbsp;<?php echo $BL['be_profile_label_city'] ?>:&nbsp;</td>
-  <td style="width:300px;"><input name="cmap_location_city" type="text" class="f11" style="width: 300px" value="<?php echo  empty($content['location']["city"]) ? '' : html($content['location']["city"]) ?>" size="30" onChange="doMapChange();"></td>
+  <td style="width:300px;"><input name="cmap_location_city" type="text" class="f11" style="width: 300px" value="<?php echo  empty($content['location']["city"]) ? '' : html($content['location']["city"]) ?>" size="30" onchange="doMapChange();"></td>
   </tr>
   </table></td>
 </tr>

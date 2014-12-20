@@ -59,7 +59,7 @@ if(count($content['recipe']['all_keywords'])) {
 	echo '<tr><td>&nbsp;</td><td>';
 	echo '<table cellpadding="0" cellspacing="0" border="0" bgcolor="#E7E8EB"><tr><td style="padding:2px;">';
 	echo '<select name="ph1" id="ph1" class="v10" ';
-	echo 'onChange="insertAtCursorPos(document.articlecontent.recipe_category, ';
+	echo 'onchange="insertAtCursorPos(document.articlecontent.recipe_category, ';
 	echo '\', \'+document.articlecontent.ph1.options[document.articlecontent.ph1.selectedIndex].value);">';
 
 	foreach($content['recipe']['all_keywords'] as $temp_val) {
