@@ -58,7 +58,6 @@ if(!empty($_SESSION["wcs_user_lang_custom"])) {
 	unset($BL['merge_lang_array']);
 }
 
-require_once PHPWCMS_ROOT.'/include/inc_lib/navi_text.inc.php';
 require_once PHPWCMS_ROOT.'/include/inc_lib/checkmessage.inc.php';
 require_once PHPWCMS_ROOT.'/config/phpwcms/conf.template_default.inc.php';
 require_once PHPWCMS_ROOT.'/config/phpwcms/conf.indexpage.inc.php';
