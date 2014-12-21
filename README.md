@@ -10,8 +10,9 @@ To get started, checkout <http://phpwcms.org> or community driven [HowTo Wiki](h
 Quick start
 -----------
 
-Clone the repo, `git clone git://github.com/slackero/phpwcms.git` or [download the latest release](https://github.com/slackero/phpwcms/zipball/master).
+Clone the repository, `git clone git://github.com/slackero/phpwcms.git` or [download the latest release](https://github.com/slackero/phpwcms/zipball/master).
 
+Expand the downloaded archive and put all files on a webserver having PHP 5.2+ and MySQL 5+ installed. Be sure to have an empty MySQL database before linking your browser to the URI on webserver. Then installer will start automatically. Follow all steps and read carefully.
 
 
 Bug tracker
