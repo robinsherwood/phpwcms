@@ -2,6 +2,62 @@ phpwcms Changelog
 =================
 
 
+Version 1.8.0
+-------------
+
+- Nicer backend design
+- More is under development
+
+
+Version 1.7.6 – December 20, 2014
+---------------------------------
+
+- ToDo (based on commit log)
+
+
+Version 1.7.5 – September 8, 2014
+---------------------------------
+
+- ToDo (based on commit log)
+
+
+Version 1.7.4 – August 8, 2014
+------------------------------
+
+- Fixed content part template
+– Issue #70 fix CP external pages
+- CKEDitor 4.4
+- Implement option to CP HTML5 player to set volume or mute audio
+
+
+
+Version 1.7.3 – May 15, 2014
+----------------------------
+
+- Fixed content part template
+– Issue #70 fix CP external pages
+- CKEDitor 4.4
+- Implement option to CP HTML5 player to set volume or mute audio
+
+
+Version 1.7.2 – February 24, 2014
+---------------------------------
+
+- ToDo (based on commit log)
+
+
+Version 1.7.1 – February 22, 2014
+---------------------------------
+
+- ToDo (based on commit log)
+
+
+Version 1.7.0 – November 4, 2013
+--------------------------------
+
+- ToDo (based on commit log)
+
+
 Version 1.6.531 – May 4, 2013
 -----------------------------
 
@@ -46,11 +102,11 @@ Version 1.6.528 – February 4, 2013
 - New config setting to force 301 redirect for id/aid to alias
 - New config setting to force 301 redirect to structure for topcount -1 and single article
 - New option for structure level to disable article 301 redirect (only availabe when enabled in config)
-- Extend `[download=ID,ID…]` by template option. No need to add `template=` by default.  
-[download=1,2 template=myfiles.tmpl /]  
-[download=1,2 template=myfiles.tmpl]  
-  Download 1  
-  Download 2  
+- Extend `[download=ID,ID…]` by template option. No need to add `template=` by default.
+[download=1,2 template=myfiles.tmpl /]
+[download=1,2 template=myfiles.tmpl]
+  Download 1
+  Download 2
 [/download]
 - Added count of CPs used for the specific type in the CP selector section of admin’s user profile edit.
 
